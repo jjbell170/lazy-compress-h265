@@ -90,6 +90,16 @@
             this.buttonContextMenu.UseVisualStyleBackColor = true;
             this.buttonContextMenu.Click += new System.EventHandler(this.button3_Click);
             // 
+            // checkBoxNvenc
+            // 
+            this.checkBoxNvenc.AutoSize = true;
+            this.checkBoxNvenc.Location = new System.Drawing.Point(224, 50);
+            this.checkBoxNvenc.Name = "checkBoxNvenc";
+            this.checkBoxNvenc.Size = new System.Drawing.Size(134, 21);
+            this.checkBoxNvenc.TabIndex = 6;
+            this.checkBoxNvenc.Text = "Use NVIDIA CUDA";
+            this.checkBoxNvenc.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.Location = new System.Drawing.Point(12, 99);
