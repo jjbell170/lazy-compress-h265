@@ -126,9 +126,11 @@ namespace CompressH265 {
 
 
             
+            string videoCodec = checkBoxNvenc.Checked ? "hevc_nvenc" : "hevc";
+
             // Converting
             process.StartInfo.FileName = "ffmpeg.exe";
-            process.StartInfo.Arguments = $" -i \"{inputFilename}\" -vcodec hevc -map_metadata 0 -vf yadif -crf 20 -preset medium {fpsParam} \"{outputFilename}\"";
+            process.StartInfo.Arguments = $" -i \"{inputFilename}\" -vcodec {videoCodec} -map_metadata 0 -vf yadif -crf 20 -preset medium {fpsParam} \"{outputFilename}\"";
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.CreateNoWindow = true;
 
