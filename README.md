@@ -1,6 +1,6 @@
-# Lazy Compress H.265 (HEVC)
+# Lazy Compress AV1
 
-Compress or convert your video files to h.265 (hevc) format with one-click, make its size much smaller!
+Compress or convert your video files to AV1 format with one-click, make its size much smaller!
 
 ![image](https://github.com/louislam/lazy-compress-h265/blob/master/readme_images/2020-05-09_230722.png)
 ![image](https://github.com/louislam/lazy-compress-h265/blob/master/readme_images/2020-05-09_225508.png)
@@ -17,7 +17,7 @@ https://github.com/louislam/lazy-compress-h265/releases
 * Easy to use, drag-and-drop and compress
 * Alternative, you could install to your Context Menu, one-click to compress
 * Keep metadata, date created and date modified.
-* Output to the same folder with postfix ".h265.mp4"
+* Output to the same folder with postfix ".av1.mp4"
 * Portable
 
 # Requirements

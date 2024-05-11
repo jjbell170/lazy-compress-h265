@@ -109,7 +109,7 @@ namespace CompressH265 {
             Process process = new Process();
             process.EnableRaisingEvents = true;
 
-            var outputFilename = inputFilename + ".h265.mp4";
+            var outputFilename = inputFilename + ".av1.mp4";
             
             if (File.Exists(outputFilename)) {
                 MessageBox.Show("The output file name is existing. Please move or delete it before converting. " + outputFilename);
@@ -126,11 +126,11 @@ namespace CompressH265 {
 
 
             
-            string videoCodec = checkBoxNvenc.Checked ? "hevc_nvenc" : "hevc";
+            string videoCodec = "libaom-av1";
 
             // Converting
             process.StartInfo.FileName = "ffmpeg.exe";
-            process.StartInfo.Arguments = $" -i \"{inputFilename}\" -vcodec {videoCodec} -map_metadata 0 -vf yadif -crf 20 -preset medium {fpsParam} \"{outputFilename}\"";
+            process.StartInfo.Arguments = $" -i \"{inputFilename}\" -vcodec {videoCodec} -map_metadata 0 -crf 20 -preset medium {fpsParam} \"{outputFilename}\"";
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.CreateNoWindow = true;
 
