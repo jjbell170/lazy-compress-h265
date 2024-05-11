@@ -89,16 +89,7 @@
             this.buttonContextMenu.Text = "Install to Context Menu";
             this.buttonContextMenu.UseVisualStyleBackColor = true;
             this.buttonContextMenu.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // checkBoxNvenc
-            // 
-            this.checkBoxNvenc.AutoSize = true;
-            this.checkBoxNvenc.Location = new System.Drawing.Point(224, 50);
-            this.checkBoxNvenc.Name = "checkBoxNvenc";
-            this.checkBoxNvenc.Size = new System.Drawing.Size(134, 21);
-            this.checkBoxNvenc.TabIndex = 6;
-            this.checkBoxNvenc.Text = "Use NVIDIA CUDA";
-            this.checkBoxNvenc.UseVisualStyleBackColor = true;
+
             // 
             // label1
             // 
@@ -152,7 +143,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Lazy Compress H.265 (HEVC)";
+            this.Text = "Lazy Compress AV1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
